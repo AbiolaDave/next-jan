@@ -7,7 +7,7 @@ const ProductsComp = ({ products }: { products: Product[] }) => {
     <>
       <div>
         {products.map((product) => (
-          <Link href={`/products/${product.id}`} key={product.id}>
+          <Link href={`/prod/${product.id}`} key={product.id}>
             <div key={product.id}>
               <h1>{product.id}</h1>
               <h1>{product.title}</h1>

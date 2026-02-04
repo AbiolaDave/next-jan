@@ -21,7 +21,7 @@ const page = async () => {
           {products.map((product: any) => (
             <Link
               prefetch={false}
-              href={`/products/${product.id}`}
+              href={`/prod/${product.id}`}
               key={product.id}
             >
               <div key={product.id}>

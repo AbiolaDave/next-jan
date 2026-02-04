@@ -5,17 +5,14 @@ export const metadata: Metadata = {
   description: "An app for SQI students",
 };
 
-export default function Layout({
-  children,
-  modal,
-}: Readonly<{
-  children: React.ReactNode;
+export default function Layout(props: {
   modal: React.ReactNode;
-}>) {
+  children: React.ReactNode;
+}) {
   return (
     <div>
-      {children}
-      {modal}
+      {props.modal}
+      {props.children}
     </div>
   );
 }
